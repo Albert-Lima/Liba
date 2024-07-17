@@ -1,0 +1,402 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --var-FontInter: "Inter", sans-serif;
+    --var-FontOpenSans: "Open Sans", sans-serif;
+    --var-BackColorBlue: #0E3663;
+    --var-WhatGreen: #005C4B;
+}
+
+header{
+    background-image: url('img/newBAckground.png');
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.socialNetwork{
+    height: max-content;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: absolute;
+    right: 30px;
+    top: 35vh;
+}
+.socialNetwork a img{
+    width: 30px;
+}
+.container_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    margin: auto;
+    gap: 50px;
+}
+.container_logo div img{
+    width: 300px;
+    filter: drop-shadow(0px 0px 20px black);
+}
+.container_logo a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    padding: 10px 50px;
+    text-decoration: none;
+    color: white;
+    gap: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.859), inset 0px 0px 10px rgba(0, 0, 0, 0.859);
+    transition: 0.2s;
+}
+.container_logo a:hover{
+    scale: 1.05;
+}
+.container_logo a h1{
+    font-family: var(--var-FontOpenSans);
+    font-size: 12pt;
+    font-weight: 300;
+    text-shadow: 0px 0px 10px black;
+}
+.container_logo a img{
+    height: 20px;
+}
+
+.top_adress{
+    height: 20vh;
+    background-color: black;
+}
+.top_adress section{
+    margin: auto;
+    max-width: 800px;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.box_info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.box_info span img{
+    height: 30px;
+}
+.desc_info_top{
+    font-family: var(--var-FontOpenSans);
+    color: white;
+    font-size: 10pt;
+    text-align: center;
+}
+
+.about_us{
+    background-color: var(--var-BackColorBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 70px;
+}
+.Title_about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.Title_about h2:nth-child(1){
+    color: rgba(255, 255, 255, 0.808);
+    font-family: var(--var-FontOpenSans);
+    font-size: 17pt;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.Title_about h2:nth-child(2){
+    color: white;
+    font-family: var(--var-FontOpenSans);
+    font-size: 17pt;
+    font-weight: 700;
+}
+.diff_father{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    gap: 170px;
+}
+.box_diff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+.box_diff div img{
+    width: 40px;
+}
+.box_diff h3{
+    color: white;
+    font-family: var(--var-FontOpenSans);
+    font-weight: 600;
+    font-size: 14pt;
+    text-align: center;
+}
+.box_diff p{
+    text-align: center;
+    color: white;
+    font-family: var(--var-FontInter);
+    font-size: 11pt;
+    font-weight: 500;
+}
+
+.slider {
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.box_img {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.imgSlide {
+    min-width: 100%;
+    height: 400px; /* Altura fixa para as imagens */
+    background-size: cover;
+    background-position: center;
+}
+.arrow {
+    position: absolute;
+    width: calc(100% - 20px);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+    z-index: 1000;
+}
+
+#leftArrow {
+    cursor: pointer;
+    user-select: none;
+    height: 60px;
+    width: 40px;
+    background-image: url('img/icons8-voltar-64.png');
+    background-size: cover;
+    background-position: center center;
+}
+#rightArrow {
+    cursor: pointer;
+    user-select: none;
+    height: 60px;
+    width: 40px;
+    background-image: url('img/icons8-avançar-64.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+.imgSlide:nth-child(1) { background-image: url('img/imagensScroll!.jpg');}
+.imgSlide:nth-child(2) { background-image: url('img/ImagensScroll2.jpg');}
+.imgSlide:nth-child(3) { background-image: url('img/imagensScroll3.jpg')}
+
+
+.CTA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.TitleCTA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.TitleCTA h2:nth-child(1){
+    font-family: var(--var-FontOpenSans);
+    font-size: 23pt;
+    font-weight: 800;
+    color: var(--var-BackColorBlue);
+}
+.TitleCTA h2:nth-child(2){
+    font-family: var(--var-FontOpenSans);
+    font-size: 23pt;
+    font-weight: 200;
+    color: black;
+}
+.linksWhatsapp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.linksWhatsapp a{
+    border: 3px solid var(--var-WhatGreen);
+    padding: 10px;
+    width: 500px;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--var-FontInter);
+    font-size: 15pt;
+    font-weight: 600;
+    color: var(--var-WhatGreen);
+    transition: 0.3s;
+}
+.linksWhatsapp a:hover{
+    transform: translateY(-10px);
+}
+
+footer{
+    height: 600px;
+    background-color: var(--var-BackColorBlue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.MapLocal{
+    width: 40%;
+    height: 500px;
+}
+.infoFooter{
+    width: 40%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    gap: 30px;
+}
+
+
+
+
+/*responsividade ----------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 1100px) {
+    .diff_father{
+        gap: 60px;
+    }
+    .top_adress{
+        height: 200px;
+    }
+}
+@media (max-width: 960px){
+    .top_adress section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+@media (max-width: 880px){
+    .diff_father{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .TitleCTA{
+        gap: 10px;
+    }
+    .TitleCTA h2:nth-child(1){
+        font-size: 15pt;
+        font-weight: 800;
+    }
+    .TitleCTA h2:nth-child(2){
+        font-size: 15pt;
+        font-weight: 200;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 30px;
+    }
+    .MapLocal{
+        width: 80%;
+        height: 80vw;
+    }
+    .infoFooter{
+        width: 90%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 580px){
+    .TitleCTA{
+        gap: 10px;
+    }
+    .TitleCTA h2:nth-child(1){
+        max-width: 90%;
+        text-align: center;
+    }
+    .TitleCTA h2:nth-child(2){
+        max-width: 90%;
+        text-align: center;
+    }
+    .linksWhatsapp{
+        width: 90%;
+    }
+    .linksWhatsapp a{
+        font-size: 12pt;
+        width: 90%;
+    }
+}
+@media (max-width: 500px){
+    header{
+        height: max-content;
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }
+    .top_adress{
+        height: 200px;
+    }
+    .box_info{
+        gap: 10px;
+    }
+    .socialNetwork{
+        height: max-content;
+        width: max-content;
+        flex-direction: row;
+        right: 30px;
+        top: 30px;
+    }
+}
